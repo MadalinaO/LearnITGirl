@@ -16,6 +16,7 @@ public class Sorter {
 					int tempValue = myArray[j];
 					myArray[j] = myArray[i];
 					myArray[i] = tempValue;
+					System.out.println(" Swaping values " + myArray[i] + " for " + myArray[j] );
 				}
 					
 			}
