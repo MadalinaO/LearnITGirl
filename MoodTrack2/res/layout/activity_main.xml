@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#f9bec7"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.moodtrack2.MainActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text=""
+        android:textColor="#181236"
+        android:textSize="32sp"
+        android:textStyle="bold|italic" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="500dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:background="#ff0048"
+        android:drawableLeft="@drawable/alarm"
+        android:onClick="sendMessage"
+        android:paddingBottom="2dp"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:paddingTop="5dp"
+        android:text="Good Morning, Alan!"
+        android:textColor="#fafdfd"
+        android:textSize="50sp"
+        android:textStyle="bold|italic" />
+
+    <RadioButton
+        android:id="@+id/radioGreat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="37dp"
+        android:text="Great, thanks!"
+        android:textSize="25sp" 
+        android:visibility="invisible"/>
+
+    <RadioButton
+        android:id="@+id/radioSoandSo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGreat"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="33dp"
+        android:text="So and so..."
+        android:textSize="25sp"
+        android:visibility="invisible" />
+
+    <RadioButton
+        android:id="@+id/radioNoSleep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioSoandSo"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="40dp"
+        android:text="Couldn&apos;t really sleep."
+        android:textSize="25sp"
+        android:visibility="invisible" />
+
+</RelativeLayout>
