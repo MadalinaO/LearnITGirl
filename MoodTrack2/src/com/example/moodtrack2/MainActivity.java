@@ -1,6 +1,7 @@
 package com.example.moodtrack2;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -11,13 +12,29 @@ import android.widget.TextView;
 
 public class MainActivity extends Activity {
 
+	public void sendMessage(View v) {
+		// action goes here
+		/*TextView salute = (TextView) findViewById(R.id.textView1);
+		String value = "How did you sleep last night?";
+		salute.setText(value);*/
+		
+		 Intent myIntent = new Intent(this, NewActivity.class);
+		  startActivity(myIntent);
+
+		/*RadioButton radioGreat = (RadioButton) findViewById(R.id.radioGreat);
+		RadioButton radioSoandSo = (RadioButton) findViewById(R.id.radioSoandSo);
+		RadioButton radioNoSleep = (RadioButton) findViewById(R.id.radioNoSleep);
+		radioGreat.setVisibility(View.VISIBLE);
+		radioSoandSo.setVisibility(View.VISIBLE);
+		radioNoSleep.setVisibility(View.VISIBLE);*/
+	}
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
 		Button buttonGoodMorning = (Button) findViewById(R.id.button1);
-		buttonGoodMorning.setOnClickListener(new View.OnClickListener() {
+		/*buttonGoodMorning.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
 				// action goes here
 				TextView salute = (TextView) findViewById(R.id.textView1);
@@ -31,7 +48,7 @@ public class MainActivity extends Activity {
 				radioSoandSo.setVisibility(View.VISIBLE);
 				radioNoSleep.setVisibility(View.VISIBLE);
 			}
-		});
+		});*/
 	}
 
 	@Override

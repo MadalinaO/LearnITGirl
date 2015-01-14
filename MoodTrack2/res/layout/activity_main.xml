@@ -8,18 +8,14 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.moodtrack2.MainActivity" >
-
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/button1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
-        android:text=""
-        android:textColor="#181236"
-        android:textSize="32sp"
-        android:textStyle="bold|italic" />
+    
+    <TextView android:id="@+id/textView1" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="50dp" 
+        android:textColor="#181236" 
+        android:textSize="32sp" 
+        android:textStyle="bold|italic"/>
 
     <Button
         android:id="@+id/button1"
@@ -40,6 +36,10 @@
         android:textSize="50sp"
         android:textStyle="bold|italic" />
 
+    <RadioGroup
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content" >
+         
     <RadioButton
         android:id="@+id/radioGreat"
         android:layout_width="wrap_content"
@@ -72,5 +72,7 @@
         android:text="Couldn&apos;t really sleep."
         android:textSize="25sp"
         android:visibility="invisible" />
+    
+    </RadioGroup>
 
 </RelativeLayout>
